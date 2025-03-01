@@ -1,0 +1,18 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/test
+    username: postgres
+    password: terrrr
+    driver: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: create
+    show-sql: true
+    properties:
+        format_sql: true
+  main:
+    allow-circular-references: true
+
+logging:
+  level:
+    org.hibernate.orm.jdbc.bind: trace
